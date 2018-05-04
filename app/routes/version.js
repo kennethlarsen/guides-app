@@ -27,6 +27,6 @@ export default Route.extend({
   },
 
   afterModel(model) {
-    set(get(this, 'page'), 'pages', get(model, 'pages'));
+    set(this.page, 'pages', get(model, 'pages'));
   }
 });
